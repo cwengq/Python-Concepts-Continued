@@ -177,3 +177,6 @@ print((lambda rent, percent: rent * percent)(6165, 1.5)) #P.s. Thats my actuall 
 #Modules
 #similar to import java.util.*; in Java
 
+import my_module
+
+print(my_module.my_skills)
