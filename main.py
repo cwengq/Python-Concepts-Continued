@@ -93,7 +93,6 @@ temp_list.pop()
 this_set = set(temp_list)
 this_set.add("E")
 
-
 # this.update(any Iterable)
 # this_set.discard("csf") will not throw error if not found
 
@@ -107,9 +106,11 @@ this_set.add("E")
 
 # endregion
 
-#List Comprehension
+# List Comprehension
 numbers = [x for x in range(10)]
-#[x ~ define x, then for loop to iterate in range of 100]
+
+
+# [x ~ define x, then for loop to iterate in range of 100]
 
 # region Functions
 def greet(name: str):  # Parameter with explicit type
@@ -150,9 +151,29 @@ class Car:  # Classes create objects? (sort of)
         self.brand = input("Enter brand name: ")
 
 
-vw: Car = Car('VW', 'GTI', 2023, 2.5, False, ['Blue', 'Black', 'Red']) #Instantiating vw
+vw: Car = Car('VW', 'GTI', 2023, 2.5, False, ['Blue', 'Black', 'Red'])  # Instantiating vw
 print(vw.year)
 
 # endregion
 
+# region lambda functions
+# Serves similar purpose to List comnprehenions and lambdas in Java
+# lambda argument(s) : expression
+lambda x: x + 1
+
+deposit = lambda rent, percent: rent * percent
+print(deposit(6165, 1.5))
+
+# But the purpose really is to have all this in one line
+# so...
+
+print((lambda rent, percent: rent * percent)(6165, 1.5)) #P.s. Thats my actuall rent Damn!
+
+# endregion
+
+#filter function
+#filter()
+
+#Modules
+#similar to import java.util.*; in Java
 
